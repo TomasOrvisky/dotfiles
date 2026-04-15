@@ -7,7 +7,8 @@ sudo apt install -y \
     i3 i3status picom \
     kitty fish \
     stow \
-    feh
+    feh \
+    arandr
 
 stow i3 i3status picom fish
 
