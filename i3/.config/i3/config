@@ -185,9 +185,10 @@ bar {
         status_command i3status
 }
 
-# (Custom) Flameshot
-bindsym Print exec flameshot gui
-bindsym $mod+Print exec flameshot full -p ~/Pictures/Screenshots
+# (Custom) Screenshots
+exec --no-startup-id xclip
+bindsym Print exec maim -s | xclip -selection clipboard -t image/png
+bindsym $mod+Print exec maim ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png
 
 # (Custom) Brightness
 bindsym XF86MonBrightnessUp exec brightnessctl set +10%

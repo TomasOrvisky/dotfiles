@@ -8,7 +8,8 @@ sudo apt install -y \
     kitty fish \
     stow \
     feh \
-    arandr
+    arandr \
+    xclip maim
 
 stow i3 i3status picom fish
 
